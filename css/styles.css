@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: #7c8798;
+  font-weight: 400;
+  background-color: #121417;
+  font-size: 1.5rem; }
+
+#container {
+  height: 100vh;
+  position: relative; }
+
+.ratingStart {
+  background-color: #252d37;
+  width: 33rem;
+  height: 33.9rem;
+  border-radius: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.4rem; }
+  .ratingStart__star--icon {
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2.4px #121417; }
+  .ratingStart__paragraph {
+    margin-top: 0.8rem;
+    text-align: justify; }
+  .ratingStart__ratings {
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
+    .ratingStart__ratings--circle {
+      width: 3.7rem;
+      height: 3.7rem;
+      border-radius: 50%;
+      box-shadow: 0px 0px 2.4px #121417;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      .ratingStart__ratings--circle:hover {
+        background-color: #7c8798;
+        color: #fff; }
+      .ratingStart__ratings--circle_numbers {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+  .ratingStart__button--submit {
+    width: 100%;
+    display: block;
+    background-color: #fb7413;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #ffffffaf;
+    cursor: pointer; }
+    .ratingStart__button--submit:hover {
+      background-color: #fff;
+      color: #fb7413; }
+
+.change-color {
+  background-color: #fb7413;
+  color: #fff; }
+  .change-color:hover {
+    background-color: #fb7413;
+    color: #fff; }
+
+.main__heading {
+  color: #ffffffaf;
+  font-size: 2.5rem;
+  font-weight: 700; }
+
+.margin-top {
+  margin-top: 2rem; }
+
+.hidden {
+  display: none; }
+
+.thankyouStart {
+  background-color: #252d37;
+  width: 33rem;
+  height: 33.9rem;
+  border-radius: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.4rem; }
+  .thankyouStart__phone--img {
+    display: block;
+    margin: 0 auto; }
+  .thankyouStart__rating--text {
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 2rem;
+    color: #fb7413;
+    background-color: #2a323baa;
+    padding: 0.5rem 2rem;
+    box-shadow: 0px 0px 2.4px #121417;
+    border-radius: 30px; }
+  .thankyouStart__paragraph {
+    margin-top: 0.8rem;
+    text-align: center; }
