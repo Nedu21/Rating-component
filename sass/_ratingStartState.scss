@@ -64,11 +64,6 @@
       text-transform: uppercase;
       color: $color-white;
       cursor: pointer;
-
-      &:hover {
-        background-color: $color-white-light;
-        color: $color-orange;
-      }
     }
   }
 }
