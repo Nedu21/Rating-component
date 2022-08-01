@@ -8,7 +8,11 @@ const ratingsCircle = document.querySelectorAll(
   ".ratingStart__ratings--circle"
 );
 
+const submitBtn = document.querySelector(`input[disabled]`);
+
 const btn = document.querySelector(".ratingStart__button--submit");
+
+let currentRating;
 
 const reset = function () {
   ratingsCircle.forEach((ratingCircle) => {
@@ -18,19 +22,21 @@ const reset = function () {
 
 ratingsCircle.forEach((ratingCircle, i) => {
   ratingCircle.addEventListener(`click`, function () {
-    const currentRating = i + 1;
-
-    const markUp = `
-      <div class="thankyouStart__rating--text">You selected ${currentRating} out of 5</div>
-    `;
+    currentRating = i + 1;
 
     reset();
     ratingCircle.classList.add(`change-color`);
-
-    btn.addEventListener("click", function () {
-      thankYou.classList.remove("hidden");
-
-      thankYouMarkUp.insertAdjacentHTML("afterend", markUp);
-    });
+    submitBtn.removeAttribute("disabled");
   });
+});
+
+btn.addEventListener("click", function () {
+  thankYou.classList.remove("hidden");
+
+  thankYouMarkUp.insertAdjacentHTML(
+    "afterend",
+    `
+  <div class="thankyouStart__rating--text">You selected ${currentRating} out of 5</div>
+`
+  );
 });
