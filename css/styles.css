@@ -65,12 +65,14 @@ body {
     border: none;
     border-radius: 30px;
     text-transform: uppercase;
-    color: #ffffffaf;
-    cursor: pointer; }
+    color: #ffffffaf; }
 
 .change-color {
   background-color: #fb7413;
   color: #fff; }
+  .change-color:hover {
+    background-color: #fb7413;
+    color: #fff; }
 
 .main__heading {
   color: #ffffffaf;
