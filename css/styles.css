@@ -67,16 +67,10 @@ body {
     text-transform: uppercase;
     color: #ffffffaf;
     cursor: pointer; }
-    .ratingStart__button--submit:hover {
-      background-color: #fff;
-      color: #fb7413; }
 
 .change-color {
   background-color: #fb7413;
   color: #fff; }
-  .change-color:hover {
-    background-color: #fb7413;
-    color: #fff; }
 
 .main__heading {
   color: #ffffffaf;
