@@ -26,7 +26,7 @@ ratingsCircle.forEach((ratingCircle, i) => {
 
     reset();
     ratingCircle.classList.add(`change-color`);
-    // submitBtn.removeAttribute("disabled");
+    submitBtn.removeAttribute("disabled");
   });
 });
 
